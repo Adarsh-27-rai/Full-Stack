@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Task Manager</h2>
+
+        <!-- Task Input Section -->
+        <div class="task-input">
+
+            <input type="text" id="taskInput" placeholder="Enter task name">
+
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button onclick="addTask()">Add Task</button>
+
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <button onclick="filterTasks('all')">Show All</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+            <button onclick="filterTasks('pending')">Pending</button>
+        </div>
+
+        <!-- Task List -->
+        <div id="taskList">
+            <p>No tasks yet</p>
+            <!-- <div class="task">
+                <span class="priority-high">
+                    New Task (Hard)
+                </span>
+
+                <div>
+                    <button>Done</button>
+                    <button>Delete</button>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
